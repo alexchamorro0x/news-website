@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {NewsapiservicesService} from '../service/newsapiservices.service';
 
 @Component({
   selector: 'app-topheading',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopheadingComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _services:NewsapiservicesService) { }
 
   ngOnInit(): void {
+
+    this._services.topHeading().subscribe((result) => {
+      console.log(result);
+    })
   }
 
 }
