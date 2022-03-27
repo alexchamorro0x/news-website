@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {NewsapiservicesService} from '../service/newsapiservices.service';
 
 @Component({
   selector: 'app-technews',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TechnewsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _services:NewsapiservicesService) { }
+
+  techNewsDisplay:any = [];
 
   ngOnInit(): void {
+    this._services.techNews().subscribe((result) => {
+      this.techNewsDisplay = result.articles;
+    });
   }
 
 }
