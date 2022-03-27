@@ -30,3 +30,17 @@ body {
   border-bottom-left-radius: 3px;
 }
 
+h3 {
+  text-align: center;
+}
+
+.nav-custom {
+  padding: 10px 15px 10px 15px;
+  background-color: black;
+  /* color: white;
+  font-family: 'Courier New', Courier, monospace; */
+  font-size: 22px;
+  border-bottom: 1px solid #ddd;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
