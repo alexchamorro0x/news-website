@@ -12,6 +12,7 @@ import { BusinessnewsComponent } from './businessnews/businessnews.component';
 // for HttpClient import:
 import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
 import { EntertainmentnewsComponent } from './entertainmentnews/entertainmentnews.component';
+import { HealthnewsComponent } from './healthnews/healthnews.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { EntertainmentnewsComponent } from './entertainmentnews/entertainmentnew
     TopheadingComponent,
     TechnewsComponent,
     BusinessnewsComponent,
-    EntertainmentnewsComponent
+    EntertainmentnewsComponent,
+    HealthnewsComponent
   ],
   imports: [
     BrowserModule,
