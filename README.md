@@ -1,5 +1,11 @@
-# Newsweb
-
+# News Web - API
+<div align="center">
+  <img src="https://github.com/yashitanamdeo/newswebsite_api/blob/main/src/assets/newsweb.png" height="200px">
+ 
+<img src="https://github.com/yashitanamdeo/newswebsite_api/blob/main/src/assets/NewsWeb.gif"/>
+ </div>
+<!-- ![NewsWeb](./src/assets/NewsWeb.gif) -->
+<br>
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.4.
 
 ## Development server
