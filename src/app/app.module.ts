@@ -8,12 +8,14 @@ import { TopheadingComponent } from './topheading/topheading.component';
 import {HttpClientModule} from '@angular/common/http';
 import {NewsapiservicesService} from './service/newsapiservices.service';
 import { TechnewsComponent } from './technews/technews.component';
+import { BusinessnewsComponent } from './businessnews/businessnews.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopheadingComponent,
-    TechnewsComponent
+    TechnewsComponent,
+    BusinessnewsComponent
   ],
   imports: [
     BrowserModule,
