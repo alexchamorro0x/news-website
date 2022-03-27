@@ -17,6 +17,9 @@ export class NewsapiservicesService {
   // businessnewsApiUrl
   businessnewsApiUrl = "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=0330aeb0b55c4e899e6f6655108aa339";
 
+  // entertainmentnewsApiUrl
+  entertainmentnewsApiUrl = "https://newsapi.org/v2/top-headlines?country=us&category=entertainment&apiKey=0330aeb0b55c4e899e6f6655108aa339";
+
   //topheading
   topHeading():Observable<any>
   {
@@ -33,5 +36,11 @@ export class NewsapiservicesService {
   businessNews():Observable<any>
   {
     return this._http.get(this.businessnewsApiUrl)
+  }
+
+  //entertainmentnews
+  entertainmentNews():Observable<any>
+  {
+    return this._http.get(this.entertainmentnewsApiUrl)
   }
 }

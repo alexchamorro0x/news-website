@@ -11,13 +11,15 @@ import { TechnewsComponent } from './technews/technews.component';
 import { BusinessnewsComponent } from './businessnews/businessnews.component';
 // for HttpClient import:
 import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
+import { EntertainmentnewsComponent } from './entertainmentnews/entertainmentnews.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopheadingComponent,
     TechnewsComponent,
-    BusinessnewsComponent
+    BusinessnewsComponent,
+    EntertainmentnewsComponent
   ],
   imports: [
     BrowserModule,
