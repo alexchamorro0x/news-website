@@ -26,6 +26,9 @@ export class NewsapiservicesService {
   // sciencenewsApiUrl
   sciencenewsApiUrl = "https://newsapi.org/v2/top-headlines?country=us&category=science&apiKey=0330aeb0b55c4e899e6f6655108aa339";
 
+  // sportsnewsApiUrl
+  sportsnewsApiUrl = "https://newsapi.org/v2/top-headlines?country=us&category=sports&apiKey=0330aeb0b55c4e899e6f6655108aa339";
+
   //topheading
   topHeading():Observable<any>
   {
@@ -60,5 +63,11 @@ export class NewsapiservicesService {
   scienceNews():Observable<any>
   {
     return this._http.get(this.sciencenewsApiUrl)
+  }
+
+  //sportsnews
+  sportsNews():Observable<any>
+  {
+    return this._http.get(this.sportsnewsApiUrl)
   }
 }

@@ -1,0 +1,15 @@
+<div class="container-fluid mt-5">
+  <h4>Sports News</h4>
+  <div class="row">
+    <div *ngFor="let data of sportsNewsDisplay" class="col-lg-3 mt-3 mb-3">
+      <div class="box">
+        <img src="{{ data.urlToImage }}" width="100%" />
+        <div *ngIf="!data.urlToImage">Image not available
+          <hr>
+        </div>
+        <h5 class="mt-2 mb-2">{{ data.title }}</h5>
+        <a href="{{ data.url }}" target="_blank" class="btn btn-dark btn-sm mt-2">Read more</a>
+      </div>
+    </div>
+  </div>
+</div>
