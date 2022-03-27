@@ -44,3 +44,12 @@ h3 {
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
 }
+
+.navbar li {
+  margin-left : 1em;
+  margin-right : 1em;
+}
+
+.logo {
+  height: 50px;
+}
