@@ -13,6 +13,7 @@ import { BusinessnewsComponent } from './businessnews/businessnews.component';
 import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
 import { EntertainmentnewsComponent } from './entertainmentnews/entertainmentnews.component';
 import { HealthnewsComponent } from './healthnews/healthnews.component';
+import { SciencenewsComponent } from './sciencenews/sciencenews.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HealthnewsComponent } from './healthnews/healthnews.component';
     TechnewsComponent,
     BusinessnewsComponent,
     EntertainmentnewsComponent,
-    HealthnewsComponent
+    HealthnewsComponent,
+    SciencenewsComponent
   ],
   imports: [
     BrowserModule,

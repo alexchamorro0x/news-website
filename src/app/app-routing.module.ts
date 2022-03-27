@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { BusinessnewsComponent } from './businessnews/businessnews.component';
 import { EntertainmentnewsComponent } from './entertainmentnews/entertainmentnews.component';
 import { HealthnewsComponent } from './healthnews/healthnews.component';
+import { SciencenewsComponent } from './sciencenews/sciencenews.component';
 import { TechnewsComponent } from './technews/technews.component';
 import { TopheadingComponent } from './topheading/topheading.component';
 
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path: 'business', component:BusinessnewsComponent}, //business
   {path: 'entertainment', component:EntertainmentnewsComponent}, //entertainment
   {path: 'health', component:HealthnewsComponent}, //health
+  {path: 'science', component:SciencenewsComponent}, //science
 ];
 
 @NgModule({
