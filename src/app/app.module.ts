@@ -5,8 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopheadingComponent } from './topheading/topheading.component';
 
-import {HttpClientModule} from '@angular/common/http';
-import {NewsapiservicesService} from './service/newsapiservices.service';
+import { HttpClientModule } from '@angular/common/http';
+import { NewsapiservicesService } from './service/newsapiservices.service';
 import { TechnewsComponent } from './technews/technews.component';
 import { BusinessnewsComponent } from './businessnews/businessnews.component';
 // for HttpClient import:
@@ -16,6 +16,13 @@ import { HealthnewsComponent } from './healthnews/healthnews.component';
 import { SciencenewsComponent } from './sciencenews/sciencenews.component';
 import { SportsnewsComponent } from './sportsnews/sportsnews.component';
 
+// for google authentication
+import { ReactiveFormsModule } from '@angular/forms';
+import {
+  GoogleLoginProvider,
+  SocialAuthServiceConfig,
+  SocialLoginModule,
+} from 'angularx-social-login';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,15 +32,31 @@ import { SportsnewsComponent } from './sportsnews/sportsnews.component';
     EntertainmentnewsComponent,
     HealthnewsComponent,
     SciencenewsComponent,
-    SportsnewsComponent
+    SportsnewsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    LoadingBarHttpClientModule
+    LoadingBarHttpClientModule,
+    ReactiveFormsModule,
+    SocialLoginModule,
   ],
-  providers: [NewsapiservicesService],
-  bootstrap: [AppComponent]
+  providers: [
+    NewsapiservicesService,
+    {
+      provide: 'SocialAuthServiceConfig',
+      useValue: {
+        autoLogin: false,
+        providers: [
+          {
+            id: GoogleLoginProvider.PROVIDER_ID,
+            provider: new GoogleLoginProvider('google-client-id'),
+          },
+        ],
+      } as SocialAuthServiceConfig,
+    },
+  ],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
