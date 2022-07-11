@@ -1,5 +1,5 @@
 # News Web - API
-TODO: implement google authentication, remove token
+<b>TODO:</b> implement google authentication, remove token
 <div align="center">
   <img src="https://github.com/yashitanamdeo/newswebsite_api/blob/main/src/assets/newsweb.png" height="200px">
  
