@@ -51,7 +51,7 @@ import {
         providers: [
           {
             id: GoogleLoginProvider.PROVIDER_ID,
-            provider: new GoogleLoginProvider('google-client-id'),
+            provider: new GoogleLoginProvider('google-client-id'), // update to your actual clientID
           },
         ],
       } as SocialAuthServiceConfig,
