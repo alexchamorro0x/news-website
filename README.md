@@ -1,5 +1,5 @@
 # News Web - API
-<b><u>TODO:</u></b> implementation of google authentication
+<b><u>TODO:</u></b> implement google authentication
 <div align="center">
   <img src="https://github.com/yashitanamdeo/newswebsite_api/blob/main/src/assets/newsweb.png" height="200px">
  
