@@ -1,9 +1,9 @@
-# News Web - API
+# News Website
 <b><u>TODO:</u></b> implement google authentication
 <div align="center">
-  <img src="https://github.com/alexchamorro0x/newswebsite_api/blob/main/src/assets/newsweb.png" height="200px">
+  <img src="https://github.com/alexchamorro0x/news-website/blob/main/src/assets/newsweb.png" height="200px">
  
-<img src="https://github.com/alexchamorro0x/newswebsite_api/blob/main/src/assets/NewsWeb.gif"/>
+<img src="https://github.com/alexchamorro0x/news-website/blob/main/src/assets/NewsWeb.gif"/>
  </div>
 <!-- ![NewsWeb](./src/assets/NewsWeb.gif) -->
 <br>
